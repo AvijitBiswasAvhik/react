@@ -1,0 +1,116 @@
+/*********************************/
+@font-face {
+    font-family: 'Arapey';
+    src: url('../../font/Arapey/Arapey-Regular.ttf');
+}
+/* style navigation */
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    height: 60px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 6px grey;
+    z-index: 1;
+    font-size: larger;
+}
+.nav-links{
+    height: 27px;
+}
+#nav > div:nth-child(2) > h5:nth-child(1) > a:nth-child(1){
+    text-decoration: none;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    list-style: none ;
+    gap: 20px;
+    height: 27px;
+}
+.shoping-cart{
+    height: 41px;
+    width: 27px;
+}
+.search-icon{
+    height: 41px;
+    width: 27px;
+}
+.nav-toogle{
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+background-color: transparent;
+    
+}
+.nav-toogle-icon{
+    height: 41px;
+    width: 27px;
+}
+@media screen and (max-width: 760px) {
+    #nav {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .navigation-link {
+        display: none;
+    }
+    .navigation-search {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 761px) and (max-width: 854px) { /* Corrected spacing */
+    #nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navigation-link {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 855px) { /* Corrected spacing */
+    #nav {
+        width: 100%;
+    }
+    .nav-toogle{
+        display: none;
+    }
+}
+/* style navigation end*/
+/*********************************/
+
+.text-decoration-none a{
+    text-decoration: none;
+    color: black;
+    
+}
+.text-decoration-none{
+    font-style: 'Arapey';
+}
+
+#cart-count-container{
+    position: relative;
+}
+#cart-count{
+    position: absolute;
+    top: 0px;
+    left: 18px;
+    color: rgb(0, 129, 241);
+    border-radius: 50%;
+    background-color: rgb(236, 201, 0);
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}

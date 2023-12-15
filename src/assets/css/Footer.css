@@ -1,0 +1,37 @@
+@font-face{
+    font-family: 'Arapey';
+    src: url('../font/Arapey/Arapey-Regular.ttf')
+}
+
+.footer-section{
+    padding-top: 50px;
+    max-width: 990px;
+    margin: 0 auto;
+}
+.footer-item-container{
+    list-style-type: none;
+    font-family: 'Arapey', sans-serif;
+    text-align: center;
+
+}
+.footer-copyright{
+    padding: 5px 0px 0px 5px;
+    text-align: center;
+}
+.footer-copyright .footer-suport{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-suport{
+    list-style-type: none;
+}
+
+
+@media screen and (min-width: 575px) {
+    .footer-section .footer-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

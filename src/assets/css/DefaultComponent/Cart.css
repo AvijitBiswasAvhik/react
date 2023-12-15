@@ -1,0 +1,70 @@
+@keyframes slideCart {
+    0% {
+        right: -120px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+#cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    color: aliceblue;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0px;
+    animation: slideCart 0.5s ease-in-out;
+
+    box-shadow: 0 0 3px black;
+}
+.cartHandle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 25px;
+    width: 25px;
+    left: -30px;
+    background-color: rgb(248, 170, 3);
+    padding: 3px;
+    border-radius: 3px;
+    font-size: larger;
+    font-weight: bold;
+    box-shadow: 0 0 3px grey;
+}
+.cart-card-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+}
+.cart-image-container {
+    height: 90px;
+    overflow: hidden;
+    width: 100%;
+}
+.cart-image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.cart-item-delete {
+    border: none;
+    background-color: white;
+}
+.cart-item-delete:hover {
+    color: grey;
+}

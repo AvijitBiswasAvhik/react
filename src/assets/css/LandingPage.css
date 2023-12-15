@@ -1,0 +1,117 @@
+@font-face{
+    font-family: 'Arapey';
+    src: url('../font/Arapey/Arapey-Regular.ttf');
+}
+
+.slide-container{
+    margin-top: -70px;
+    top: 0px;
+    height: 100vh !important;
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    z-index: -1;
+
+}
+
+.slider{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.slider-content{
+   
+    color: aliceblue;
+    text-align: center;
+}
+.slider-content h5{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.slider-content h1{
+    font-family: 'Arapey', serif, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.slider .shopping-btn{
+    padding: 3px 10px;
+    height: 40px;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.slide-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+}
+
+
+/*=== index section ===*/
+/*=== index section ===*/
+
+.index-paragraph{
+    padding: 70px;
+    font-family: 'Arapey', Courier, monospace;
+    font-size: large;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+/*===newas letter section ===*/
+/*===newas letter section ===*/
+.news-letter-section{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.news-letter-section .letter-content .letter-content-title{
+    font-family: 'Old';
+}
+.news-letter-section .letter-content .letter-description{
+    font-family: 'Old';
+}
+.letter-form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.letter-form .letter-mail{
+    height: 40px;
+    width: 85%;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+}
+.letter-form .letter-mail-button{
+    width: 15%;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 2px 5px black;
+}
+.divider{
+    width: 100px;
+    background-color: black;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,46 @@
+@keyframes slideBar {
+    0%{
+        left: -120px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.menuBar{
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0px;
+    animation: slideBar 0.5s ease-in-out;
+}
+.menuBarLi{
+    list-style-type: none;
+}
+.sideBarMenue{
+    height: 50px;
+    width: 130px;
+    border-bottom: 1px solid aliceblue;
+    display: flex;
+    align-items: center;
+}
+.menuHide{
+    position: absolute;
+    left: 210px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(53, 158, 12);
+}

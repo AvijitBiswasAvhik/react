@@ -1,0 +1,141 @@
+/* all font single product views */
+@font-face{
+    font-family: 'Old';
+    src: url('../font/old/OldStandardTT-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat/static/Montserrat-Regular.ttf');
+}
+@font-face{
+    font-family: 'Arapey';
+    src: url('../font/Arapey/Arapey-Regular.ttf');
+}
+/* all font single product views */
+/* set all font familly views */
+.single-product-title{
+    font-family: 'Old';
+    text-align: center;
+ 
+
+}
+.single-product-price{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.125em;
+    text-align: center;
+    margin-top: 20px;
+}
+.single-product-varient .single-product-size-title{
+    font-family: 'Arapey';
+    font-size: large;
+    font-weight: 6px;
+    text-align: center;
+}
+.single-product-size, .single-product-buttons{
+    font-family: 'Montserrat', sans;
+}
+.single-product-description{
+    font-family: 'Arapey';
+    line-height: 1.563;
+    font-size: 16px;
+    font-weight: 400;
+}
+.single-product-description .description-list{
+    font-weight: 600;
+}
+/* set all font familly views */
+.single-product-view{
+    display: block;
+}
+.single-view{
+    
+}
+/* style sizes*/
+.single-product-varient{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.single-product-sizes{
+    list-style-type: none;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.single-product-sizes .single-product-size{
+    border: 1px solid grey;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+/* digine single product button */
+.single-product-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+ .single-product-buttons button{
+     width: 130px;
+     border: none;
+     font-weight: 600;
+     padding: 5px;
+     font-size: 14px;
+
+ }
+ .single-product-buttons button:nth-child(1){
+    background-color: aliceblue;
+    border: 1px solid black;
+ }
+ .single-product-buttons button:nth-child(2){
+    background-color: black;
+    color: aliceblue;
+ }
+ /* stle slider*/
+ #carouselExampleIndicators{
+   height: 500px !important;
+ }
+.carousel-inner{
+    height: 100% !important;
+}
+.carousel-item{
+    height: 100% !important;
+}
+.carousel-item img{
+    height: 100% ;
+    width: 100% ;
+    object-fit: cover;
+
+}
+.background-indicator{
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 5px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+@media screen and (min-width: 575px) {
+    .single-product-view{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 50px;
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .single-product-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
